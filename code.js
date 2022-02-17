@@ -26,9 +26,9 @@ let numbers = [
   document.write("<ul>");
   
   let largestNumber = 0
-  for (let i = 0; i < numbers.length; i++){
-    if (numbers[i] > largestNumber) {
-      largestNumber = numbers[i]
+  for (let i of numbers){
+    if (i > largestNumber) {
+      largestNumber = i
     }
   }
   // Then render each li:
